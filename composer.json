@@ -1,5 +1,5 @@
 {
-    "name":         "rannk/php-ssh",
+    "name":         "rannk/php-interactive-ssh",
     "type":         "library",
     "description":  "Provide an interactive ssh connection.",
     "keywords":     ["ssh", "ssh2", "interactive"],
