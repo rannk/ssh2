@@ -4,10 +4,10 @@
     "description":  "Provide an interactive ssh connection.",
     "keywords":     ["ssh", "ssh2", "interactive"],
     "license":      "MIT",
-    "authors": {
+    "authors": [{
             "name": "Rannk Deng",
             "homepage": "https://github.com/rannk"
-    },
+    }],
     "require": {
         "php": ">=5.3.2",
         "ext-ssh2": "*"
