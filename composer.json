@@ -1,0 +1,20 @@
+{
+    "name":         "rannk/php-ssh",
+    "type":         "library",
+    "description":  "Provide an interactive ssh connection.",
+    "keywords":     ["ssh", "ssh2", "interactive"],
+    "license":      "MIT",
+    "authors": {
+            "name": "Rannk Deng",
+            "homepage": "https://github.com/rannk"
+    },
+    "require": {
+        "php": ">=5.3.2",
+        "ext-ssh2": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Ssh": "src/"
+        }
+    },
+}
