@@ -37,7 +37,10 @@ class Connection {
         if($this->authType == "password") {
             $session = new SessionByPwd($this->host . ":" . $this->port, $this->username, $this->password);
             $session->connect();
-            return $session;
+            if($session->isConnected())
+                return $session;
+                
+            return;
         }
         
         trigger_error("Please select an authentication method. suggestion: authByPassword(username, password)", E_USER_WARNING);

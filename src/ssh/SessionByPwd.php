@@ -94,4 +94,11 @@ class SessionByPwd {
             fclose($this->source);
         }
     }
+    
+    public function isConnected(){
+        if($this->conn)
+            return TRUE;
+        
+        return FALSE;
+    }
 }
