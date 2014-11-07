@@ -89,7 +89,7 @@ class SessionByPwd
         }
     }
     
-    public function exec($cmd) {
+    public function exec($cmd, &$output = array()) {
         if ($this->conn === false) {
             $this->disconnect();
             trigger_error("the remote host is not connected", E_USER_WARNING);
@@ -102,6 +102,9 @@ class SessionByPwd
         $contents = "";
         while ($line = fgets ($source)) {
             $contents .= $line;
+            $line = str_replace("\r", "", $line);
+            $line = str_replace("\n", "", $line);
+            $output[] = $line;
         }
         return $contents;
     }
